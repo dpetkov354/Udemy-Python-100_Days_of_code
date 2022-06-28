@@ -1,13 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys  #USED IF REQUEST FOR PHONE NUMBER IS USED
+# from selenium.webdriver.common.keys import Keys  #USED IF REQUEST FOR PHONE NUMBER IS USED
 from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException
 import time
 
-FB_EMAIL = "petkow354@gmail.com"
-FB_PASSWORD = "taytay354"
-PHONE_NUMBER = "0896877082"
+FB_EMAIL = "FB_NAME"
+FB_PASSWORD = "FB_PASS"
+# PHONE_NUMBER = "PHONE_NUMBER" # IF FONE NUMBER IS REQUESTED
 
 chrome_driver_path = Service(r"C:\Users\PETKOV\Dev\chromedriver.exe")
 driver = webdriver.Chrome(service=chrome_driver_path)
