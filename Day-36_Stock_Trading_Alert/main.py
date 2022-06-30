@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 from twilio.rest import Client
 
 # TWILIO ACCOUNT INFO #
-account_sid = 'ACbab9fb39ac43b345cd6950dbd19731ed'
-auth_token = '7197c3a0daa2ab6f7ec67cc9d5eb23fe'
+account_sid = 'INSERT HERE'
+auth_token = 'INSERT HERE'
 
 # STOCK INFO TESLA FROM#
 STOCK_NAME = "TSLA"
@@ -16,7 +16,7 @@ params = {
     "function": "TIME_SERIES_DAILY",
     "symbol": STOCK_NAME,
     "datatype": "json",
-    "apikey": "CZRW8CPXKY584I1T"
+    "apikey": "INSERT HERE"
 }
 response = requests.get(STOCK_ENDPOINT, params=params)
 response.raise_for_status()
@@ -87,7 +87,7 @@ if percentage > 5:
         client = Client(account_sid, auth_token)
         message = client.messages.create(
             body=f"{date}-{heading}\n{descr}\n{exact_url}",
-            from_='+18647635176',
-            to='+359896877082'
+            from_='PHONE NUMBER HERE',
+            to='PHONE NUMBER HERE'
         )
         print(message.status)
