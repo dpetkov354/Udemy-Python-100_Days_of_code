@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2>Random number: {{ num }}</h2>  <!--#import the random number from server.py>-->
+<a href="{{ url_for('get_blog', num=3) }}"> Go to Blog</a>  <!--#linkig to method blog to link to the blog page-->
+</body>
+<footer>
+    <p>@{{ year }}</p>
+</footer>
+</html>
